@@ -3,6 +3,24 @@
 #ifndef ASSIGNMENT_H_
 #define ASSIGNMENT_H_
 
+/***************************/
+/*********Controls**********/
+/***************************/
+
+// Arm Controls
+extern ControllerButton armUpBtn;
+extern ControllerButton armDownBtn;
+
+// Wing Controls
+extern ControllerButton leftWingBtn;
+extern ControllerButton rightWingBtn;
+
+// 
+extern ControllerButton flwBtn;
+
+/***************************/
+/*******Periphirals*********/
+/***************************/
 extern Controller controller;
 
 extern std::shared_ptr<ChassisController> drivetrain;
