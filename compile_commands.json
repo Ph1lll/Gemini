@@ -30,11 +30,11 @@
             "-funwind-tables",
             "--std=gnu++17",
             "-o",
-            "bin/main.cpp.o",
-            "src/main.cpp"
+            "bin/assignment.cpp.o",
+            "src/assignment.cpp"
         ],
         "directory": "/home/philza/GitHub/Gemini",
-        "file": "src/main.cpp"
+        "file": "src/assignment.cpp"
     },
     {
         "arguments": [
@@ -67,10 +67,10 @@
             "-funwind-tables",
             "--std=gnu++17",
             "-o",
-            "bin/assignment.cpp.o",
-            "src/assignment.cpp"
+            "bin/main.cpp.o",
+            "src/main.cpp"
         ],
         "directory": "/home/philza/GitHub/Gemini",
-        "file": "src/assignment.cpp"
+        "file": "src/main.cpp"
     }
 ]
