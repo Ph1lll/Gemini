@@ -5,8 +5,9 @@
 /***************************/
 
 // Arm Controls
-ControllerButton armUpBtn(ControllerDigital::right);
-ControllerButton armDownBtn(ControllerDigital::down);
+ControllerButton armHomeBtn(ControllerDigital::down);
+ControllerButton armMidBtn(ControllerDigital::right);
+ControllerButton armEndBtn(ControllerDigital::up);
 
 // Wing Controls
 ControllerButton leftWingBtn(ControllerDigital::L2);

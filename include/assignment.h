@@ -8,8 +8,9 @@
 /***************************/
 
 // Arm Controls
-extern ControllerButton armUpBtn;
-extern ControllerButton armDownBtn;
+extern ControllerButton armHomeBtn;
+extern ControllerButton armMidBtn;
+extern ControllerButton armEndBtn;
 
 // Wing Controls
 extern ControllerButton leftWingBtn;

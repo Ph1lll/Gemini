@@ -13,10 +13,9 @@ void armControl() {
         calibrated = true;
       }
     } else {
-      pos = (armUpBtn.changedToPressed()) ? pos + 1 : pos;
-      pos = (armDownBtn.changedToPressed()) ? pos - 1 : pos;
-      pos = (pos == 3 || pos < 0) ? 0: pos;
-      armMtr.moveAbsolute(2250 * pos, 100);
+      if (armHomeBtn.isPressed()) armMtr.moveAbsolute(0, 100);
+      if (armMidBtn.isPressed()) armMtr.moveAbsolute(2400, 100);
+      if (armEndBtn.isPressed()) armMtr.moveAbsolute(4200, 100);
 
       if (flwBtn.changedToPressed()) enable_flywheel = (enable_flywheel == 0) ? 1 : 0;
       flwMtr.moveVoltage(12000 * enable_flywheel);
