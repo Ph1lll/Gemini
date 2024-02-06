@@ -31,7 +31,6 @@ std::shared_ptr<ChassisController> drivetrain =
 // Flywheel
 Motor armMtr(-16);
 Motor flwMtr(-15);
-DistanceSensor dist(17);
 
 // Wings
 pros::ADIDigitalOut leftWing('A');
