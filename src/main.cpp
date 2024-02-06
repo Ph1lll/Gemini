@@ -32,10 +32,7 @@ void disabled() {}
 void competition_initialize() {}
 
 void autonomous() {
-  for (int i = 0; i < 4; i++) {
-    drivetrain->moveDistance(6_in);
-    drivetrain->turnAngle(90_deg);
-  }
+  drivetrain->moveDistance(33_in);
 }
 
 void opcontrol() {
