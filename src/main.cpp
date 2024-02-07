@@ -16,10 +16,9 @@ void armControl() {
       if (armHomeBtn.isPressed()) armMtr.moveAbsolute(0, 100);
       if (armMidBtn.isPressed()) armMtr.moveAbsolute(2400, 100);
       if (armEndBtn.isPressed()) armMtr.moveAbsolute(4200, 100);
-
-      if (flwBtn.changedToPressed()) enable_flywheel = (enable_flywheel == 0) ? 1 : 0;
-      flwMtr.moveVoltage(12000 * enable_flywheel);
     }
+    if (flwBtn.changedToPressed()) enable_flywheel = (enable_flywheel == 0) ? 1 : 0;
+    flwMtr.moveVoltage(12000 * enable_flywheel);
     pros::delay(10);
   }
 }
@@ -31,7 +30,9 @@ void disabled() {}
 void competition_initialize() {}
 
 void autonomous() {
-  drivetrain->moveDistance(33_in);
+  drivetrain->moveDistance(700_mm);
+  drivetrain->setMaxVelocity(300);
+  drivetrain->moveDistance(-450_mm);
 }
 
 void opcontrol() {
